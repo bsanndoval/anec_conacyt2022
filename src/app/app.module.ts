@@ -6,23 +6,10 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 
 
-
-
-//Angular Material
-import {MatFormFieldModule} from '@angular/material/form-field';
-import {MatInputModule} from '@angular/material/input';
-import {MatButtonModule} from '@angular/material/button';
-import {MatSnackBarModule} from '@angular/material/snack-bar';
-import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
-
-
-
-
 //Componentes
 import { LoginComponent } from './components/login/login.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
-
-
+import { SharedModule } from './components/shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -35,13 +22,7 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
     CommonModule,
     BrowserAnimationsModule,
     AppRoutingModule,
-    MatFormFieldModule,
-    MatInputModule,
-    MatButtonModule,
-    ReactiveFormsModule,
-    MatSnackBarModule,
-    MatProgressSpinnerModule
-   
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]
