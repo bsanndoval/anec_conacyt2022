@@ -5,17 +5,21 @@ import { AppRoutingModule } from './app-routing.module';
 import { ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 
-
 //Componentes
 import { LoginComponent } from './components/login/login.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { SharedModule } from './components/shared/shared.module';
+import { DashboardModule } from './components/dashboard/dashboard.module';
+import { NavbarComponent } from './components/dashboard/navbar/navbar.component';
+import { PredioComponent } from './components/dashboard/predio/predio.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    DashboardComponent
+    DashboardComponent,
+    NavbarComponent,
+    PredioComponent
     
   ],
   imports: [
@@ -24,6 +28,7 @@ import { SharedModule } from './components/shared/shared.module';
     AppRoutingModule,
     SharedModule
   ],
+  
   providers: [],
   bootstrap: [AppComponent]
 })
